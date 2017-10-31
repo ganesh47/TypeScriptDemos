@@ -4,15 +4,24 @@
   "scripts": {
     "tsc": "tsc",
     "tsc:w": "tsc --watch",
-    "start": "tsc && concurrently \"tsc -w\" \"lite-server\""
+    "start": "tsc && concurrently \"tsc -w\" \"lite-server\"",
+    "test": "mocha -r ts-node/register test/**/*.spec.ts"
   },
   "dependencies": {
     "systemjs": "0.20.17"
   },
   "devDependencies": {
     "lite-server": "2.3.0",
-    "typescript": "2.4.2",
+    "typescript": "^2.5.3",
     "@types/jquery": "3.2.11",
-    "concurrently": "3.5.0"
+    "concurrently": "3.5.0",
+    "mocha": "^4.0.1",
+    "mocha-jsdom": "^1.1.0",
+    "chai": "^4.1.2",
+    "@types/mocha": "^2.2.44",
+    "@types/chai": "^4.0.4",
+    "ignore-styles": "^5.0.1",
+    "ts-node": "^3.3.0",
+    "typescript-require": "^0.2.9-1"
   }
 }
