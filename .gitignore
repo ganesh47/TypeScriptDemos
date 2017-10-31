@@ -2,7 +2,7 @@ examples/**/scripts/**/*.js.map
 examples/**/scripts/**/*.js
 
 !examples/cookbook/src/scripts/libs/jquery-1.12.2.js
-
+.idea
 node_modules
 jspm_packages
 bower_components
